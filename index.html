@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Jasmeet Rajrana - Computer Science & Engineering Student at Lovely Professional University. Explore projects, skills, certifications, and experience." />
+  <meta name="keywords" content="Jasmeet Rajrana, Portfolio, CSE, Software Developer, Python, C++, Web Development, Smart Irrigation, Cybersecurity" />
+  <meta name="author" content="Jasmeet Rajrana" />
+  
+  <title>Jasmeet Rajrana | Software Developer & CSE Student</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background Glow & Grid Overlay -->
+  <div class="bg-gradient-orb orb-1"></div>
+  <div class="bg-gradient-orb orb-2"></div>
+  <div class="bg-gradient-orb orb-3"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">JR</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-bracket">&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities (Theme Switcher & Mobile Menu Toggle) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Let's Talk</a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="status-dot"></span>
+            <span>Available for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Jasmeet Rajrana</span>
+          </h1>
+
+          <div class="typewriter-container reveal">
+            <span class="typewriter-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description reveal">
+            Motivated Computer Science and Engineering student at <strong>Lovely Professional University</strong>.
+            Passionate about building practical software, exploring IoT solutions, and applying problem-solving skills to real-world challenges.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <button onclick="window.print()" class="btn btn-ghost" title="Print or Save CV as PDF">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume / CV
+            </button>
+          </div>
+
+          <!-- Quick Connect Social Badges -->
+          <div class="hero-socials reveal">
+            <a href="mailto:jasmeetrajrana076@gmail.com" class="social-chip" title="Email Jasmeet">
+              <i class="fa-solid fa-envelope"></i>
+              <span>jasmeetrajrana076@gmail.com</span>
+            </a>
+            <a href="tel:+919992823373" class="social-chip" title="Call Jasmeet">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 9992823373</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Dynamic Terminal -->
+        <div class="hero-visual reveal">
+          <div class="profile-card-glow">
+            <div class="profile-card">
+              <div class="card-header-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="card-title-bar">jasmeet_rajrana.py</span>
+              </div>
+              <div class="card-code-body">
+                <pre><code><span class="code-keyword">class</span> <span class="code-class">SoftwareEngineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-self">self</span>):
+        <span class="code-self">self</span>.name = <span class="code-str">"Jasmeet Rajrana"</span>
+        <span class="code-self">self</span>.role = <span class="code-str">"CSE Undergrad @ LPU"</span>
+        <span class="code-self">self</span>.cgpa = <span class="code-num">8.1</span>
+        <span class="code-self">self</span>.languages = [<span class="code-str">"C++"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"JS"</span>]
+        <span class="code-self">self</span>.focus = <span class="code-str">"Full-Stack & IoT Systems"</span>
+        <span class="code-self">self</span>.status = <span class="code-str">"Open to Opportunities"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">say_hello</span>(<span class="code-self">self</span>):
+        <span class="code-keyword">return</span> <span class="code-str">"Let's build something impactful together! 🚀"</span></code></pre>
+              </div>
+              <div class="card-stats-row">
+                <div class="stat-box">
+                  <span class="stat-number">8.1</span>
+                  <span class="stat-label">LPU CGPA</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">96.8%</span>
+                  <span class="stat-label">Python Cert</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">3+</span>
+                  <span class="stat-label">Languages</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / OBJECTIVE SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Career Focus</span>
+          <h2 class="section-title">About Me & Objective</h2>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-objective reveal">
+            <div class="card-icon-header">
+              <div class="feature-icon"><i class="fa-solid fa-compass"></i></div>
+              <h3>Career Objective</h3>
+            </div>
+            <p class="objective-quote">
+              "Motivated Computer Science and Engineering student seeking opportunities to apply programming and problem-solving skills while gaining practical experience in software development and emerging technologies."
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <strong>B.Tech in CSE</strong>
+                  <span>Lovely Professional University (2025–2029)</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                  <strong>Hardware & Software Blend</strong>
+                  <span>Sensor-based IoT systems & core algorithms</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                  <strong>Community & Team Player</strong>
+                  <span>Conducted school cybersecurity outreach workshops</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card quick-facts reveal">
+            <div class="card-icon-header">
+              <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Core Strengths</h3>
+            </div>
+            <div class="strengths-list">
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <div>
+                  <h4>Problem-Solving</h4>
+                  <p>Strong algorithmic foundation in C++ and Python data structures.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-comments"></i></div>
+                <div>
+                  <h4>Clear Communication</h4>
+                  <p>Skilled in translating complex technical subjects for diverse audiences.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <div class="strength-icon"><i class="fa-solid fa-people-group"></i></div>
+                <div>
+                  <h4>Teamwork & Adaptability</h4>
+                  <p>Thrives in collaborative engineering sprints and dynamic learning environments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">A balanced toolkit encompassing programming languages, web standards, databases, and interpersonal capabilities.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-terminal"></i></div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skills-tag-wrap">
+              <div class="skill-pill">
+                <i class="fa-solid fa-code"></i>
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Core / OOP</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-python"></i>
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Certified (96.84%)</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-js"></i>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Modern ES6+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-globe"></i></div>
+              <h3>Web Technologies</h3>
+            </div>
+            <div class="skills-tag-wrap">
+              <div class="skill-pill">
+                <i class="fa-brands fa-html5"></i>
+                <span class="skill-name">HTML5</span>
+                <span class="skill-level">Semantic Markup</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="skill-name">CSS3</span>
+                <span class="skill-level">Responsive & Flex/Grid</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-layer-group"></i>
+                <span class="skill-name">UI / UX Basics</span>
+                <span class="skill-level">Design Principles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Systems -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Databases & Data</h3>
+            </div>
+            <div class="skills-tag-wrap">
+              <div class="skill-pill">
+                <i class="fa-solid fa-server"></i>
+                <span class="skill-name">DBMS</span>
+                <span class="skill-level">Relational Concepts</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-table"></i>
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Queries & Schema</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="skill-name">Data Modeling</span>
+                <span class="skill-level">ER Diagrams</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="skills-tag-wrap">
+              <div class="skill-pill">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span class="skill-name">Problem-Solving</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span class="skill-name">Communication</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-handshake"></i>
+                <span class="skill-name">Teamwork</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-arrows-spin"></i>
+                <span class="skill-name">Adaptability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Practical Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">Real-world projects developed during academic coursework and community initiatives.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Smart Irrigation System -->
+          <article class="project-card reveal">
+            <div class="project-banner">
+              <div class="project-badge-top">
+                <span class="year-badge"><i class="fa-regular fa-calendar"></i> 2026</span>
+                <span class="domain-badge"><i class="fa-solid fa-microchip"></i> IoT & Automation</span>
+              </div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart Irrigation System Using Soil Sensor</h3>
+              <p class="project-lead">
+                An automated sensor-driven irrigation solution designed to optimize agricultural water consumption by monitoring real-time soil moisture.
+              </p>
+
+              <div class="project-points">
+                <div class="point-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Developed an intelligent irrigation prototype using a soil moisture sensor to continuously detect soil hydration thresholds and trigger watering cycles only when necessary.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Engineered as part of <strong>Electronics and Communication Engineering (ECE) coursework</strong>, bridging sensor-based automation and microcontroller programming.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Targeted environmental conservation by preventing over-watering, reducing water waste, and maintaining ideal soil health.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-solid fa-microchip"></i> Soil Moisture Sensors</span>
+                <span class="tech-tag"><i class="fa-solid fa-sliders"></i> Automation Logic</span>
+                <span class="tech-tag"><i class="fa-solid fa-code"></i> C++ / Embedded</span>
+                <span class="tech-tag"><i class="fa-solid fa-droplet"></i> Water Conservation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Cybersecurity Awareness Program -->
+          <article class="project-card reveal">
+            <div class="project-banner security-banner">
+              <div class="project-badge-top">
+                <span class="year-badge"><i class="fa-regular fa-calendar"></i> 2026</span>
+                <span class="domain-badge"><i class="fa-solid fa-shield-halved"></i> Social Impact</span>
+              </div>
+              <div class="project-icon-large">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Cybersecurity Awareness Program</h3>
+              <p class="project-lead">
+                A dedicated community initiative focused on teaching online safety, cyber hygiene, and threat awareness to young school students.
+              </p>
+
+              <div class="project-points">
+                <div class="point-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Conducted interactive cybersecurity awareness workshops for school students under the university's <strong>Community Development Project (CDP)</strong>.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Demystified fundamental cyber concepts including phishing prevention, safe browsing, password entropy, multi-factor authentication, and social engineering.</span>
+                </div>
+                <div class="point-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Designed accessible educational collateral and relatable presentations to help students cultivate secure digital habits.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-solid fa-shield-virus"></i> Cyber Hygiene</span>
+                <span class="tech-tag"><i class="fa-solid fa-key"></i> Password Security</span>
+                <span class="tech-tag"><i class="fa-solid fa-chalkboard-user"></i> Public Speaking</span>
+                <span class="tech-tag"><i class="fa-solid fa-hand-holding-heart"></i> Community Outreach</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Continuous Learning</span>
+          <h2 class="section-title">Certifications & Honors</h2>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card-featured reveal">
+            <div class="cert-glow-border"></div>
+            <div class="cert-card-inner">
+              <div class="cert-icon-badge">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="cert-content">
+                <div class="cert-header-meta">
+                  <span class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Saylor Academy</span>
+                  <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> February 2026</span>
+                </div>
+                <h3 class="cert-name">CS105: Introduction to Python</h3>
+                <p class="cert-description">
+                  Successfully completed an intensive <strong>36-hour coursework</strong> covering fundamental Python syntax, control structures, object-oriented programming concepts, and practical problem-solving.
+                </p>
+                <div class="cert-footer">
+                  <div class="score-pill">
+                    <span class="score-label">Final Grade</span>
+                    <span class="score-value">96.84%</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="fa-solid fa-circle-check"></i> Verified Certificate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: LPU -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot current-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-inst-info">
+                  <h3 class="degree-title">Bachelor of Technology (B.Tech)</h3>
+                  <h4 class="inst-name">Lovely Professional University</h4>
+                  <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Phagwara, Punjab</span>
+                </div>
+                <div class="timeline-time-badge">
+                  <span>2025 – 2029</span>
+                </div>
+              </div>
+              <p class="timeline-major">Major: <strong>Computer Science and Engineering</strong></p>
+              <div class="academic-score-badge">
+                <i class="fa-solid fa-award"></i>
+                <span><strong>CGPA: 8.1</strong> (3rd Semester)</span>
+              </div>
+              <p class="timeline-details">
+                Focused on core computer science fundamentals including Data Structures & Algorithms, Object-Oriented Programming (C++/Python), Database Management Systems, and IoT Automation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Intermediate -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-inst-info">
+                  <h3 class="degree-title">Intermediate (Senior Secondary)</h3>
+                  <h4 class="inst-name">Indira Gandhi Sr. Sec. School</h4>
+                  <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Haryana</span>
+                </div>
+                <div class="timeline-time-badge">
+                  <span>Completed 2025</span>
+                </div>
+              </div>
+              <div class="academic-score-badge">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Percentage: <strong>66%</strong></span>
+              </div>
+              <p class="timeline-details">
+                Completed secondary education with rigorous science and mathematics coursework, establishing analytical and quantitative foundations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Matriculation -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-inst-info">
+                  <h3 class="degree-title">Matriculation (Secondary School)</h3>
+                  <h4 class="inst-name">Shamrock School</h4>
+                  <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Haryana</span>
+                </div>
+                <div class="timeline-time-badge">
+                  <span>Completed 2023</span>
+                </div>
+              </div>
+              <div class="academic-score-badge">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Percentage: <strong>65%</strong></span>
+              </div>
+              <p class="timeline-details">
+                Foundational education covering science, mathematics, and communicative English.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES SECTION -->
+    <section class="section languages-section" id="languages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Communication</span>
+          <h2 class="section-title">Languages Spoken</h2>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="languages-grid">
+          <div class="lang-card reveal">
+            <div class="lang-icon"><i class="fa-solid fa-language"></i></div>
+            <div class="lang-info">
+              <h3>English</h3>
+              <p>Professional & Academic Working Proficiency</p>
+              <div class="lang-bar"><div class="lang-progress" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lang-card reveal">
+            <div class="lang-icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="lang-info">
+              <h3>Hindi</h3>
+              <p>Native / Fluent Proficiency</p>
+              <div class="lang-bar"><div class="lang-progress" style="width: 100%;"></div></div>
+            </div>
+          </div>
+
+          <div class="lang-card reveal">
+            <div class="lang-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="lang-info">
+              <h3>Punjabi</h3>
+              <p>Native / Fluent Proficiency</p>
+              <div class="lang-bar"><div class="lang-progress" style="width: 100%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Contact & Connect</h2>
+          <div class="heading-line"></div>
+          <p class="section-subtitle">Whether you have an internship opportunity, project collaboration, or just want to connect, feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details Cards -->
+          <div class="contact-info-col reveal">
+            <div class="contact-card copyable-card" data-copy="jasmeetrajrana076@gmail.com" title="Click to copy email address">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:jasmeetrajrana076@gmail.com" class="contact-value">jasmeetrajrana076@gmail.com</a>
+                <span class="copy-hint"><i class="fa-regular fa-copy"></i> Click to copy</span>
+              </div>
+            </div>
+
+            <div class="contact-card copyable-card" data-copy="+919992823373" title="Click to copy phone number">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Phone / WhatsApp</span>
+                <a href="tel:+919992823373" class="contact-value">+91 9992823373</a>
+                <span class="copy-hint"><i class="fa-regular fa-copy"></i> Click to copy</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <span class="contact-label">Current Location</span>
+                <span class="contact-value">Phagwara, Punjab / Haryana, India</span>
+              </div>
+            </div>
+
+            <div class="socials-bar-card">
+              <h4>Connect on Social Platforms</h4>
+              <div class="social-links-row">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="mailto:jasmeetrajrana076@gmail.com" class="social-btn mail" aria-label="Send Mail">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>Direct Mail</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col reveal">
+            <div class="form-container">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required />
+                  </div>
+                  <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                  </div>
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Inquiry" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message <span class="required">*</span></label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-comment-dots input-icon"></i>
+                    <textarea id="message" name="message" rows="4" placeholder="Hello Jasmeet, I came across your portfolio..." required></textarea>
+                  </div>
+                  <span class="error-msg" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                  <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">JR</span>
+          <span class="logo-slash">/</span>
+          <span class="logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-tagline">Jasmeet Rajrana &bull; Computer Science & Engineering Undergrad</p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">&copy; <span id="year"></span> Jasmeet Rajrana. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
