@@ -37,26 +37,23 @@
         <span class="logo-bracket">&gt;</span>
       </a>
 
-      <!-- Desktop Navigation -->
+      <!-- Desktop Navigation (Education removed as requested) -->
       <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
         <ul class="nav-list">
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Action Utilities (Theme Switcher & Mobile Menu Toggle) -->
+      <!-- Action Utilities (Theme Switcher & Mobile Menu Toggle; Let's Talk button removed as requested) -->
       <div class="nav-actions">
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
           <i class="fa-solid fa-moon moon-icon"></i>
           <i class="fa-solid fa-sun sun-icon"></i>
         </button>
-
-        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Let's Talk</a>
 
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="bar"></span>
@@ -85,7 +82,7 @@
           </h1>
 
           <div class="typewriter-container reveal">
-            <span class="typewriter-prefix">I am a </span>
+            <span class="typewriter-prefix">I am a&nbsp;</span>
             <span class="typewriter-text" id="typewriter"></span>
             <span class="cursor">&nbsp;</span>
           </div>
@@ -95,7 +92,7 @@
             Passionate about building practical software, exploring IoT solutions, and applying problem-solving skills to real-world challenges.
           </p>
 
-          <!-- CTA Buttons -->
+          <!-- CTA Buttons (Resume / CV linked to attached CV PDF) -->
           <div class="hero-cta reveal">
             <a href="#projects" class="btn btn-primary">
               <i class="fa-solid fa-code"></i> View Projects
@@ -103,26 +100,8 @@
             <a href="#contact" class="btn btn-secondary">
               <i class="fa-solid fa-paper-plane"></i> Contact Me
             </a>
-            <button onclick="window.print()" class="btn btn-ghost" title="Print or Save CV as PDF">
+            <a href="assets/Jasmeet_Rajrana_CV.pdf" target="_blank" download="Jasmeet_Rajrana_CV.pdf" class="btn btn-ghost" title="View / Download Resume PDF">
               <i class="fa-solid fa-file-arrow-down"></i> Resume / CV
-            </button>
-          </div>
-
-          <!-- Quick Connect Social Badges -->
-          <div class="hero-socials reveal">
-            <a href="mailto:jasmeetrajrana076@gmail.com" class="social-chip" title="Email Jasmeet">
-              <i class="fa-solid fa-envelope"></i>
-              <span>jasmeetrajrana076@gmail.com</span>
-            </a>
-            <a href="tel:+919992823373" class="social-chip" title="Call Jasmeet">
-              <i class="fa-solid fa-phone"></i>
-              <span>+91 9992823373</span>
-            </a>
-            <a href="https://www.linkedin.com/in/jasmeet-rajrana-149145397/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
-              <i class="fa-brands fa-github"></i>
             </a>
           </div>
         </div>
@@ -374,13 +353,11 @@
         <div class="projects-grid">
           <!-- Project 1: Smart Irrigation System -->
           <article class="project-card reveal">
-            <div class="project-banner">
+            <div class="project-img-container">
+              <img src="assets/smart_irrigation.jpg" alt="Smart Irrigation System with IoT Soil Moisture Sensor" class="project-img" loading="lazy" />
               <div class="project-badge-top">
                 <span class="year-badge"><i class="fa-regular fa-calendar"></i> 2026</span>
                 <span class="domain-badge"><i class="fa-solid fa-microchip"></i> IoT & Automation</span>
-              </div>
-              <div class="project-icon-large">
-                <i class="fa-solid fa-seedling"></i>
               </div>
             </div>
 
@@ -416,13 +393,11 @@
 
           <!-- Project 2: Cybersecurity Awareness Program -->
           <article class="project-card reveal">
-            <div class="project-banner security-banner">
+            <div class="project-img-container">
+              <img src="assets/cybersecurity_awareness.jpg" alt="Cybersecurity & Digital Safety Awareness Program" class="project-img" loading="lazy" />
               <div class="project-badge-top">
                 <span class="year-badge"><i class="fa-regular fa-calendar"></i> 2026</span>
-                <span class="domain-badge"><i class="fa-solid fa-shield-halved"></i> Social Impact</span>
-              </div>
-              <div class="project-icon-large">
-                <i class="fa-solid fa-user-shield"></i>
+                <span class="domain-badge domain-badge-security"><i class="fa-solid fa-shield-halved"></i> Social Impact</span>
               </div>
             </div>
 
@@ -466,9 +441,11 @@
           <span class="section-eyebrow">Continuous Learning</span>
           <h2 class="section-title">Certifications & Honors</h2>
           <div class="heading-line"></div>
+          <p class="section-subtitle">Verified professional and academic course achievements in software engineering and programming.</p>
         </div>
 
         <div class="cert-grid">
+          <!-- Certificate 1: Python by Saylor Academy -->
           <div class="cert-card-featured reveal">
             <div class="cert-glow-border"></div>
             <div class="cert-card-inner">
@@ -478,20 +455,57 @@
               <div class="cert-content">
                 <div class="cert-header-meta">
                   <span class="cert-issuer"><i class="fa-solid fa-building-columns"></i> Saylor Academy</span>
-                  <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> February 2026</span>
+                  <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> February 7, 2026</span>
                 </div>
                 <h3 class="cert-name">CS105: Introduction to Python</h3>
                 <p class="cert-description">
-                  Successfully completed an intensive <strong>36-hour coursework</strong> covering fundamental Python syntax, control structures, object-oriented programming concepts, and practical problem-solving.
+                  Completed an intensive <strong>36-hour coursework</strong> covering fundamental Python programming, control flow, functions, and object-oriented principles.
                 </p>
+                <div class="cert-meta-tags">
+                  <span class="cert-meta-item"><i class="fa-solid fa-hashtag"></i> ID: 9500115246JR</span>
+                  <span class="cert-meta-item"><i class="fa-solid fa-clock"></i> 36 Hours</span>
+                </div>
                 <div class="cert-footer">
                   <div class="score-pill">
                     <span class="score-label">Final Grade</span>
                     <span class="score-value">96.84%</span>
                   </div>
-                  <div class="verified-badge">
-                    <i class="fa-solid fa-circle-check"></i> Verified Certificate
+                  <a href="assets/Python_Saylor_Certificate.pdf" target="_blank" class="cert-link-btn" title="View Saylor Python Certificate PDF">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate Link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2: Computer Programming in C (iamneo & LPU) -->
+          <div class="cert-card-featured reveal">
+            <div class="cert-glow-border"></div>
+            <div class="cert-card-inner">
+              <div class="cert-icon-badge cert-icon-c">
+                <i class="fa-solid fa-c"></i>
+              </div>
+              <div class="cert-content">
+                <div class="cert-header-meta">
+                  <span class="cert-issuer"><i class="fa-solid fa-award"></i> iamneo (An NIIT Venture) &amp; LPU</span>
+                  <span class="cert-date"><i class="fa-regular fa-calendar-check"></i> May 21, 2026</span>
+                </div>
+                <h3 class="cert-name">Computer Programming (C Language)</h3>
+                <p class="cert-description">
+                  Awarded Certificate of Appreciation for demonstrating strong commitment, consistency, and excellence throughout a comprehensive <strong>150-hour</strong> course in Computer Programming.
+                </p>
+                <div class="cert-meta-tags">
+                  <span class="cert-meta-item"><i class="fa-solid fa-hashtag"></i> C.No: 13DH3bl5Be1Af0Dg3Bh1</span>
+                  <span class="cert-meta-item"><i class="fa-solid fa-clock"></i> 150 Hours</span>
+                </div>
+                <div class="cert-footer">
+                  <div class="score-pill score-pill-gold">
+                    <span class="score-label">Recognition</span>
+                    <span class="score-value">Excellence</span>
                   </div>
+                  <a href="assets/Computer_Programming_Certificate.pdf" target="_blank" class="cert-link-btn" title="View Computer Programming Certificate PDF">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Certificate Link
+                  </a>
                 </div>
               </div>
             </div>
@@ -678,7 +692,7 @@
                   <i class="fa-brands fa-linkedin-in"></i>
                   <span>LinkedIn</span>
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="GitHub">
+                <a href="https://github.com/jasmeetrajrana076-lgtm" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="GitHub">
                   <i class="fa-brands fa-github"></i>
                   <span>GitHub</span>
                 </a>
@@ -742,7 +756,7 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (Bottom redirect links removed as requested) -->
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-left">
@@ -753,17 +767,6 @@
           <span class="logo-bracket">&gt;</span>
         </a>
         <p class="footer-tagline">Jasmeet Rajrana &bull; Computer Science & Engineering Undergrad</p>
-      </div>
-
-      <div class="footer-center">
-        <ul class="footer-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
       </div>
 
       <div class="footer-right">
