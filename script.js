@@ -186,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach((el) => revealObserver.observe(el));
   } else {
-    // Fallback if IntersectionObserver is not supported
     revealElements.forEach((el) => el.classList.add('revealed'));
   }
 
@@ -202,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
         await navigator.clipboard.writeText(textToCopy);
         showToast(`Copied "${textToCopy}" to clipboard!`, 'success');
       } catch (err) {
-        // Fallback copy
         const textarea = document.createElement('textarea');
         textarea.value = textToCopy;
         textarea.style.position = 'fixed';
